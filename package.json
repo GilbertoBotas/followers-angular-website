@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "postinstall": "ng build --configuration production",
-    "deploy:gh": "ng build --configuration production && npx angular-cli-ghpages --dir=dist/hello-world/browser",
+    "deploy:gh": "ng build --configuration production && ngh -d /dist/hello-world/browser",
     "deploy:firebase": "ng build --configuration production && firebase deploy"
   },
   "private": true,
